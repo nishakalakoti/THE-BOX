@@ -1,0 +1,107 @@
+
+$primary:#2947A9;
+$secondary:#A3AAC2;
+$success:  #F6F8F7 ;
+
+$accent:#F9995D;
+
+$custom_theme_colors: (
+   "accent": $accent, 
+);
+
+
+// container- widths
+$custom-container-max-widths: (
+  xl: 1150px,
+  xxl: 1232px
+);
+
+$body-color: #292E3D;
+
+
+$nav-link-color:#14171F;
+$nav-link-hover-color: $accent;
+$link-decoration: none;
+// font-size
+
+$font-size-base: 1rem;  
+
+
+$h1-font-size:                min(72px, calc($font-size-base + 4.5vw)); // 72px;
+$h2-font-size:                $font-size-base * 2.25;  //36px;
+$h3-font-size:                $font-size-base * 1.5;   //24px;
+$h4-font-size:                $font-size-base * 1.25;  //20px;
+$h5-font-size:                $font-size-base * 1.125; //18px;
+$h6-font-size:                $font-size-base  ;  // 16px;
+
+
+
+
+// font-family
+$font-family-base:          "Work Sans",sans-serif;
+$headings-color:             #292E3D;
+
+
+$card-title-color:          #3D445C;
+$form-label-color:                #A3AAC2 ;
+
+// buttons
+$btn-border-radius:  0.25em; 
+
+$input-btn-padding-y-lg:      1em;
+$input-btn-padding-x-lg:      1.25em;
+
+
+$spacer: 10px;
+$spacers: (
+  0: 0,
+  1: $spacer * .5,
+  2: $spacer * 1,
+  3: $spacer * 1.5,
+  4: $spacer * 2,
+  5: $spacer * 2.5,
+  6: $spacer * 3,
+  7: $spacer * 3.5,
+  8: $spacer * 4,
+  50: $spacer * 5,
+  60: $spacer * 6,
+  70: $spacer * 7,
+  80: $spacer * 8,
+  90: $spacer * 9,
+  100: $spacer * 10,
+  120: $spacer * 12,
+);
+
+
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+
+
+
+$container-max-widths : map-merge($map1: $container-max-widths , $map2: $custom-container-max-widths );
+$theme_colors: map-merge($map1: $theme_colors, $map2: $custom_theme_colors );
+
+
+
+
+
+$nav-link-font-size: $h5-font-size;
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import './header';
+@import './banner';
+@import './footer';
+@import './fome';
+@import './ads';
+@import './about-us';
+@import './Years-Experience';
+@import './projects';
+body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1{
+    line-height: 1;
+  }
+  

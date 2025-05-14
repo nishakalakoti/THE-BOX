@@ -1,0 +1,43 @@
+// .list-group-item {
+//     color: #C2C7D6;
+//     border-color: transparent;
+  
+//     &:hover,
+//     &:focus,
+//     &:active,
+//     &.active {
+//       color: $primary !important;
+//       border-left-color: $primary !important;
+//     }
+//   }
+
+
+
+.project{
+    .nav-link {
+        color: #C2C7D6; 
+        border-color: transparent;
+      
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+          color: $primary !important;
+          border-left-color: $primary !important;
+        }
+    }
+}
+
+    .swiper-button-prev {
+        &::after {
+            display: none;
+        }
+    }
+    .swiper-button-next{
+        &::after {
+            display: none;
+        }
+    }
+
+
+

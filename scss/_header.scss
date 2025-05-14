@@ -1,0 +1,9 @@
+header .nav-item{ padding: 0 1.5625rem; 
+    .nav-link{
+        color: $nav-link-color;
+        &:hover{
+            color: $accent;
+        }
+   } 
+}
+
